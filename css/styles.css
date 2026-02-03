@@ -1,0 +1,152 @@
+body {
+  background-image: url(../images/bg-space.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #111;
+  color: #ccc;
+}
+
+#app {
+  text-align: center;
+  width: 820px;
+  margin: auto;
+}
+
+.top {
+  padding: 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  text-align: left;
+}
+
+.top h1 {
+  font-family: "Orbitron", sans-serif;
+  color: #fd4;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.top small {
+  font-family: "Orbitron", sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 0.8em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.top form {
+  margin: 0;
+}
+
+.top form {
+  text-align: right;
+}
+
+.top {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 25px;
+}
+
+.top div:first-child {
+  text-align: left;
+}
+
+.top form {
+  text-align: right;
+}
+
+.characters {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.characters .item {
+  padding: 20px;
+}
+
+.characters .item img {
+  width: 100%;
+  border-radius: 20%;
+  border: 5px #111 solid;
+}
+
+.characters .item img:hover {
+  border: 5px #fd4 solid;
+}
+
+.buttons-icons {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin: 10px 0;
+}
+
+.buttons-icons span {
+  font-size: 1.7em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 8px;
+  border-radius: 50%;
+}
+
+.material-symbols-outlined {
+  color: #fd4;
+  font-size: 1.7em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 8px;
+  border-radius: 50%;
+}
+
+.material-symbols-outlined:hover {
+  color: rgb(255, 0, 64);
+}
+
+.material-icons {
+  color: rgb(255, 0, 0);
+  font-size: 1.7em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 8px;
+  border-radius: 50%;
+}
+
+.material-icons:hover {
+  color: #f70000;
+}
+
+.likes-count {
+  font-size: 1em;
+  margin-top: 10px;
+  color: #fd4;
+  font-family: "Orbitron", sans-serif;
+}
+
+.characters .item-name {
+  font-family: "Orbitron", sans-serif;
+  color: #fff;
+  font-size: 0.7em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+input {
+  padding: 0.75em 1.25em;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+}
+
+button {
+  padding: 0.75em 1.25em;
+  border-radius: 8px;
+  background-color: #fd4;
+  color: #111;
+  font-size: 1rem;
+  border: none;
+}
