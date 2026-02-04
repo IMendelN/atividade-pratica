@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validador e Calculadora</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- SEÇÃO DE FORMULÁRIO -->
+      <div class="formulario-section">
+        <h1>Validação de Dados</h1>
+
+        <input type="text" name="usuarioNome" id="uNome" placeholder="Nome" />
+        <input
+          type="text"
+          name="usuarioEmail"
+          id="uEmail"
+          placeholder="E-mail"
+        />
+        <input
+          type="text"
+          name="usuarioCPFCNPJ"
+          id="uCPFCNPJ"
+          placeholder="CPF/CNPJ"
+        />
+
+        <button type="button" class="btn-validar" onclick="validarFormulario()">
+          Validar
+        </button>
+
+        <div class="mensagemFinal">
+          <div id="aviso-erro">
+            <strong>Email inválido!</strong>
+          </div>
+
+          <div id="aviso-erro-cpfcnpj">
+            <strong>CPF/CNPJ inválido!</strong>
+          </div>
+        </div>
+      </div>
+
+      <!-- SEÇÃO DA CALCULADORA -->
+      <div class="calculadora-section">
+        <h2>Calculadora</h2>
+
+        <input type="number" id="num1" placeholder="Número 1" />
+        <input type="number" id="num2" placeholder="Número 2" />
+
+        <div class="botoes-calculadora">
+          <button onclick="somarNumeros()">Somar</button>
+          <button onclick="subtrairNumeros()">Subtrair</button>
+          <button onclick="multiplicarNumeros()">Multiplicar</button>
+          <button onclick="dividirNumeros()">Dividir</button>
+        </div>
+
+        <h3 id="resultado">Resultado:</h3>
+      </div>
+    </div>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
